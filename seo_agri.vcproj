@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="seo_agri"
+	ProjectGUID="{62b9086d-defd-4829-8f8d-585e2a9496ce}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			ConfigurationType="2"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"
+			IntermediateDirectory="..\Release\win32-msvc\obj\seo_agri\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="..\..\src\terralib\kernel,.,..\..\terraViewPlugins\base,..\..\terraView,..\..\terraView\ui,..\..\ui\terraView,..\..\ui\appUtils,..\..\src\libspl,..\..\src\terralib\kernel,..\..\src\terralib\functions,..\..\src\terralib\drivers\qt,..\..\src\terralib\drivers\spl,..\..\src\appUtils,..\..\ui,include,$(QTDIR)\include,src\ui\,ui,c:\trunk\terraViewPlugins\seo_agri,src\moc\,C:\Qt\3.2.0\mkspecs\win32-msvc.net"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				AssemblerListingLocation="..\Release\win32-msvc\obj\seo_agri\"
+				BufferSecurityCheck="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"
+				ExceptionHandling="TRUE"
+				GeneratePreprocessedFile="0"
+				ObjectFile="..\Release\win32-msvc\obj\seo_agri\"
+				Optimization ="2"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName="../Release/win32-msvc/obj/seo_agri/"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="TRUE"
+				SuppressStartupBanner="TRUE"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt320.lib libspl.lib terralib.lib te_apputils.lib terraViewCore.lib te_spl.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				AdditionalLibraryDirectories="../../Release/terralib,../../Release/terralib,../../Release/te_apputils,../../Release/libspl,../../Release/te_spl,../../Release/terraViewCore,$(QTDIR)\lib"
+				BaseAddress="0x39D00000"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"
+				LinkIncremental="1"
+				OutputFile="..\Release\win32-msvc\seo_agri400.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				Version="4.00"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="src\seo_agriPluginCode.cpp">
+			</File>
+			<File
+				RelativePath="src\seo_agriplugin.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="include\seo_agriPluginCode.h">
+			</File>
+			<File
+				RelativePath="include\seo_agriplugin.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc'ing include\seo_agriplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe include\seo_agriplugin.h -o src\moc\moc_seo_agriplugin.cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="src\moc\moc_seo_agriplugin.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="src\moc\moc_Frm_Principal.cpp">
+			</File>
+			<File
+				RelativePath="src\moc\moc_seo_agriplugin.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="src\ui\Frm_Principal.cpp">
+			</File>
+			<File
+				RelativePath="src\ui\Frm_Principal.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			ParseFiles="FALSE"
+			Filter="ui">
+			<File
+				RelativePath="ui\Frm_Principal.ui">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic'ing ui\Frm_Principal.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ui\Frm_Principal.ui -o src\ui\Frm_Principal.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\Frm_Principal.ui -i Frm_Principal.h -o src\ui\Frm_Principal.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\Frm_Principal.h -o src\moc\moc_Frm_Principal.cpp"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="src\ui\Frm_Principal.h;src\ui\Frm_Principal.cpp;src\moc\moc_Frm_Principal.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			ParseFiles="FALSE"
+			Filter="ts">
+			<File
+				RelativePath="seo_agri_pt.ts">
+			</File>
+			<File
+				RelativePath="seo_agri_sp.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

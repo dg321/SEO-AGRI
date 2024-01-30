@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62b9086d-defd-4829-8f8d-585e2a9496ce}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Release\win32-msvc\obj\seo_agri\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\terralib\kernel;.;..\..\terraViewPlugins\base;..\..\terraView;..\..\terraView\ui;..\..\ui\terraView;..\..\ui\appUtils;..\..\src\libspl;..\..\src\terralib\kernel;..\..\src\terralib\functions;..\..\src\terralib\drivers\qt;..\..\src\terralib\drivers\spl;..\..\src\appUtils;..\..\ui;include;$(QTDIR)\include;src\ui\;ui;c:\trunk\terraViewPlugins\seo_agri;src\moc\;C:\Qt\3.2.0\mkspecs\win32-msvc.net;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -GX -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\Release\win32-msvc\obj\seo_agri\</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <ObjectFileName>..\Release\win32-msvc\obj\seo_agri\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_NO_DEBUG;NDEBUG;_WINDOWS;NDEBUG;WIN32;QT_DLL;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>../Release/win32-msvc/obj/seo_agri/</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qt-mt320.lib;libspl.lib;terralib.lib;te_apputils.lib;terraViewCore.lib;te_spl.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;imm32.lib;winmm.lib;wsock32.lib;winspool.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../Release/terralib;../../Release/terralib;../../Release/te_apputils;../../Release/libspl;../../Release/te_spl;../../Release/terraViewCore;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <BaseAddress>0x39D00000</BaseAddress>
+      <DelayLoadDLLs>comdlg32.dll;oleaut32.dll;winmm.dll;wsock32.dll;winspool.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <ImportLibrary>$(OutDir)$(ProjectName).lib</ImportLibrary>
+      <OutputFile>..\..\Release\Plugins\seo_agri400.dll</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>4.00</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Area.cpp" />
+    <ClCompile Include="Distancia.cpp" />
+    <ClCompile Include="Persistir.cpp" />
+    <ClCompile Include="src\inteligencia\AlgoritmoGenetico.cpp" />
+    <ClCompile Include="src\persistente\Colheitadeira.cpp" />
+    <ClCompile Include="src\persistente\Perda.cpp" />
+    <ClCompile Include="src\persistente\Umidade.cpp" />
+    <ClCompile Include="src\seo_agriPluginCode.cpp" />
+    <ClCompile Include="src\seo_agriplugin.cpp" />
+    <ClCompile Include="src\moc\moc_Frm_Principal.cpp" />
+    <ClCompile Include="src\moc\moc_seo_agriplugin.cpp" />
+    <ClCompile Include="src\ui\Frm_Principal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Area.h" />
+    <ClInclude Include="Distancia.h" />
+    <ClInclude Include="include\inteligencia\AlgoritmoGenetico.h" />
+    <ClInclude Include="include\persistente\Colheitadeira.h" />
+    <ClInclude Include="include\persistente\Perda.h" />
+    <ClInclude Include="include\persistente\Umidade.h" />
+    <ClInclude Include="include\seo_agriPluginCode.h" />
+    <ClInclude Include="Persistente.h" />
+    <ClInclude Include="Persistir.h" />
+    <ClInclude Include="Poligono.h" />
+    <ClInclude Include="Tabelas.h" />
+    <ClInclude Include="ui\Frm_Principal.ui.h" />
+    <CustomBuild Include="include\seo_agriplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing include\seo_agriplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe include\seo_agriplugin.h -o src\moc\moc_seo_agriplugin.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">src\moc\moc_seo_agriplugin.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\ui\Frm_Principal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\Frm_Principal.ui">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing ui\Frm_Principal.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe ui\Frm_Principal.ui -o src\ui\Frm_Principal.h &amp;&amp; $(QTDIR)\bin\uic.exe ui\Frm_Principal.ui -i Frm_Principal.h -o src\ui\Frm_Principal.cpp &amp;&amp; $(QTDIR)\bin\moc.exe src\ui\Frm_Principal.h -o src\moc\moc_Frm_Principal.cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">src\ui\Frm_Principal.h;src\ui\Frm_Principal.cpp;src\moc\moc_Frm_Principal.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="seo_agri_pt.ts" />
+    <None Include="seo_agri_sp.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

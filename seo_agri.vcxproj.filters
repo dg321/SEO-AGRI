@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bcea92a4-4df0-4754-acc2-4f001d2e98f0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c9c2c7f7-3938-43f6-b37a-37dffecdad71}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Generated MOC Files">
+      <UniqueIdentifier>{992ced14-af27-4784-993f-ede6cebd1bfc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc</Extensions>
+    </Filter>
+    <Filter Include="Generated UI Files">
+      <UniqueIdentifier>{05ce6fa2-1446-4d06-b0ef-36b0bf7d069a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;h;hpp;hxx;</Extensions>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{18ad98dd-99b8-4275-b7b7-c6de312dd810}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translations Files">
+      <UniqueIdentifier>{792a0c2f-5d72-4e43-b014-9134c07f70c8}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\persistente">
+      <UniqueIdentifier>{228b1990-01e2-4554-96de-48ee4939e5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\persistente">
+      <UniqueIdentifier>{e15482a8-0db0-4986-8c60-1f788adf8925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inteligencia">
+      <UniqueIdentifier>{6c666562-8d49-445c-abe2-734a73019b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\inteligencia">
+      <UniqueIdentifier>{2cab2940-a443-4be1-944a-8aa84a03c9f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\seo_agriPluginCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seo_agriplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\moc\moc_Frm_Principal.cpp">
+      <Filter>Generated MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\moc\moc_seo_agriplugin.cpp">
+      <Filter>Generated MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\Frm_Principal.cpp">
+      <Filter>Generated UI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\persistente\Colheitadeira.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\persistente\Umidade.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inteligencia\AlgoritmoGenetico.cpp">
+      <Filter>Source Files\inteligencia</Filter>
+    </ClCompile>
+    <ClCompile Include="src\persistente\Perda.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+    <ClCompile Include="Persistir.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+    <ClCompile Include="Distancia.cpp">
+      <Filter>Source Files\persistente</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\seo_agriPluginCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\Frm_Principal.h">
+      <Filter>Generated UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\persistente\Colheitadeira.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="include\persistente\Umidade.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inteligencia\AlgoritmoGenetico.h">
+      <Filter>Header Files\inteligencia</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Frm_Principal.ui.h">
+      <Filter>Generated UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\persistente\Perda.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Persistente.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Persistir.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Poligono.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Area.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Distancia.h">
+      <Filter>Header Files\persistente</Filter>
+    </ClInclude>
+    <ClInclude Include="Tabelas.h">
+      <Filter>Source Files\persistente</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="seo_agri_pt.ts">
+      <Filter>Translations Files</Filter>
+    </None>
+    <None Include="seo_agri_sp.ts">
+      <Filter>Translations Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="include\seo_agriplugin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\Frm_Principal.ui">
+      <Filter>Forms</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
